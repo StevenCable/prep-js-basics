@@ -9,8 +9,12 @@
 *
 * It should be a String.
 **/
-
-
+var firstName;
+firstName = "Steven";
+var lastName;
+lastName = "Cable";
+var birthPlace;
+birthPlace = "Seattle, Wa";
 
 /**
 * #2
@@ -21,7 +25,9 @@
 *
 * Their values should be a Number
 **/
-
+var favoriteNumber = 12;
+var currentYear = 2016;
+var thatOnePrinceSong = 1999;
 
 
 /**
@@ -33,7 +39,11 @@
 *
 * Their values should be a Boolean
 **/
-
+var isDaytime = true;
+var isNightTime = false;
+var isLeftHanded = false;
+var inHawaii = true;
+var isHappyCoding = true;
 
 
 /**
@@ -44,7 +54,10 @@
 *
 * Their values should be a Null value
 **/
-
+var enrolledAtDevLeague;
+enrolledAtDevLeague = null;
+var completedFridayPrep;
+completedFridayPrep = null;
 
 
 /**
@@ -55,8 +68,9 @@
 * This Array contains the names of all the states
 * which can be found along the west coast of The United States.
 **/
-
-
+var westCoast = ["Washington", "Oregon", "California", "Alaska"];//I would like to point out that Alaska is often forgotten here
+// and as expected upon running the test, it does not even address Alaska in the Array. That aint the east coast, just sayin.
+console.log(westCoast[3]);
 
 /**
 * #5b
@@ -66,7 +80,7 @@
 * This Array contains numbers that are considered 'even values'.
 * Have at least ten even values in this array.
 **/
-
+var evenNumbers = [1980, 1986, 1988, 1992, 1996, 2000, 2002, 2004, 2010, 2016, 4];
 
 
 /**
@@ -79,9 +93,12 @@
 *
 * Extend this behavior to include subtraction, multiplication and division.
 */
+var sumOfNumbers = 63 + 6;
+var minusOfNumbers = 72 - 3;
+var productOfNumbers = 23 * 3;
+var quotientOfNumbers = 138 / 2;
 
-
-
+console.log(sumOfNumbers, minusOfNumbers, productOfNumbers, quotientOfNumbers);
 
 /**
 * #6b Comparisons & Logic
@@ -100,8 +117,10 @@
 *   See if you can come up with a few examples of double comparison
 *   operator(==) vs triple comparison operator(===).
 */
-
-
+var isEqual = ("Tacocat" === "tacocat"); //returns false
+console.log(isEqual);
+var isEqual = (6 == "6"); //returns true
+console.log(isEqual);
 
 /**
 * #6c Assignments
@@ -118,7 +137,16 @@
 *   The tests for this section cannot test your variable as it changes,
 *   it can only test that you declared the variable by giving it the right name.
 */
-
+var generalContainer = 6;
+console.log(generalContainer);
+generalContainer +=42;
+console.log(generalContainer); 
+var generalContainer = 6 ==="6";
+console.log(generalContainer);
+var generalContainer = "this is my general container, dawg";
+console.log(generalContainer);
+var generalContainer = 6 == "6";
+console.log(generalContainer);
 
 
 /**
@@ -132,8 +160,10 @@
 *
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
-
-
+function jump(height){
+	return "White people can't jump more than " +height+ " feet";
+} 
+console.log(jump(1));
 
 /**
 * #7b
@@ -144,4 +174,9 @@
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
+function cook(ingredient1, ingredient2, recipeName){
 
+	return console.log("Yo, my momma makes a bomb-ass " +recipeName+ " using " +ingredient1+ " and " +ingredient2+ "!");
+}
+cook("Tomatoes", "Cheese", "Pizza");
+	
